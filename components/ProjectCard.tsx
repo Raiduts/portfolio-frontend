@@ -11,7 +11,7 @@ type Props = {
 
 export default function ProjectCard({ title, description, created_at, image, itch_io }: Props) {
   return (
-    <div className="group overflow-hidden rounded-xl border border-gray-800 hover:border-blue-500 transition transform hover:-translate-y-1 hover:scale-[1.02] bg-black/40 backdrop-blur flex flex-col h-full">
+    <div className="group overflow-hidden rounded-xl border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition transform hover:-translate-y-1 hover:scale-[1.02] bg-black/40 backdrop-blur flex flex-col h-full">
 
       {/* IMAGE PREVIEW */}
       <div className="relative h-48 overflow-hidden">
