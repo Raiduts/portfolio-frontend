@@ -43,12 +43,13 @@ export default function Projects() {
         Featured Projects
       </h2>
 
-      {loading ? ( // ✅ loading state
+      {
+      loading ? ( // ✅ loading state
         <div className="flex justify-center items-center h-64">
           <div className="w-10 h-10 border-2 border-purple-500/30 border-t-purple-400 rounded-full animate-spin"></div>
         </div>
       ) : (
-        <div className="grid md:grid-cols-3 gap-10 w-300 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-10 mx-auto">
           {/* ✅ pake spread biar lebih clean */}
           <ProjectCard {...featuredProject} />
 
@@ -56,7 +57,9 @@ export default function Projects() {
             <ProjectCard key={project.id} {...project} />
           ))}
         </div>
-      )}
+      )
+      }
+      
     </section>
   )
 }

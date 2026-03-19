@@ -15,7 +15,7 @@ export default function Skills() {
         Skills
       </h2>
 
-      <div className="grid md:grid-cols-4 gap-10 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-4 gap-10 mx-auto">
 
         <SkillColumn title="Frontend" skills={frontend} />
 
@@ -45,7 +45,7 @@ function SkillColumn({ title, skills }: SkillColumnProps) {
         {title}
       </h3>
 
-      <ul className="space-y-1 text-gray-400 grid md:grid-cols-2">
+      <ul className="space-y-1 text-gray-400 grid md:grid-cols-2 gap-2">
         {skills.map((skill, index) => (
           <li key={index}>
                 {skill}

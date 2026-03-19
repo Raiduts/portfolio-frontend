@@ -13,7 +13,7 @@ export default function Contact() {
           including web, apps, and game development.
         </p>
 
-        <div className="flex justify-center gap-6">
+        <div className="grid md:grid-cols-3 gap-10 mx-auto">
 
           <a 
             href="https://github.com/raiduts"
