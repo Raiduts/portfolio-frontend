@@ -7,9 +7,7 @@ export default function Game() {
 
   return (
     <div className="mt-16 min-h-screen bg-linear-to-b from-black via-purple-950/20 to-black">
-      {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-12">
-        {/* Title Section */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-white mb-2">Flappy Bird</h1>
           <p className="text-gray-400 text-sm">
@@ -17,14 +15,10 @@ export default function Game() {
           </p>
         </div>
 
-        {/* Game Container dengan efek glow ungu */}
         <div className="relative">
-          {/* Glow effect */}
           <div className="absolute -inset-1 bg-linear-to-r from-purple-600/20 to-purple-400/20 rounded-lg blur-xl"></div>
 
-          {/* Game card */}
           <div className="relative bg-zinc-900 rounded-lg overflow-hidden border border-purple-500/30">
-            {/* Loading State */}
             {isLoading && (
               <div className="h-150 flex items-center justify-center bg-zinc-900/90">
                 <div className="text-center">
@@ -34,7 +28,6 @@ export default function Game() {
               </div>
             )}
 
-            {/* Game Iframe */}
             <iframe
               src="/game/flappy/index.html"
               width="100%"
@@ -46,7 +39,6 @@ export default function Game() {
           </div>
         </div>
 
-        {/* Game Info dengan efek transparan */}
         <div className="mt-6 grid grid-cols-2 gap-3">
           <div className="bg-zinc-900/80 backdrop-blur-sm rounded-lg px-4 py-3 border border-purple-500/30">
             <span className="text-purple-400 text-sm font-medium block mb-1">
@@ -62,7 +54,6 @@ export default function Game() {
           </div>
         </div>
 
-        {/* Buttons */}
         <div className="mt-4 flex gap-3">
           <button
             onClick={() => {
@@ -76,7 +67,6 @@ export default function Game() {
           </button>
         </div>
 
-        {/* Footer dengan efek ungu */}
         <div className="mt-12 text-center">
           <p className="text-zinc-700 text-sm">
             <span className="text-purple-400/50">✦</span> flappy bird • arcade •
