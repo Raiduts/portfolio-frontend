@@ -10,7 +10,7 @@ export default function About() {
 
         <p className="text-gray-400 leading-relaxed">
           I am a software developer who started my journey in game development
-          using Unity and C#. Over time I became interested in building
+          using Unity and Unreal Engine. Over time I became interested in building
           interactive applications across different platforms including
           web, apps, and games.
         </p>
