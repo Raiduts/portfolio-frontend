@@ -45,14 +45,18 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     checkInput() {
         this.cursors = this.scene.cursors;
+
         this.spaceKey = this.cursors.space.isDown;
-        this.mouseTap = this.scene.input.mousePointer.isDown;
+
+        this.pointerTap = this.scene.input.activePointer.isDown;
 
         if (this.body.allowGravity == false) return; 
 
         this.body.velocity.y += 1;
 
-        if (this.spaceKey || this.mouseTap) this.flyUp();
+        if (this.spaceKey || this.pointerTap) {
+            this.flyUp();
+        }
     }
 
     flyUp() {

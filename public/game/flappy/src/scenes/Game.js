@@ -63,10 +63,8 @@ export class Game extends Phaser.Scene {
         }
 
         if (this.player) {
-            // Ambil posisi Y player
             const playerY = this.player.y;
             
-            // Cek jika player menyentuh batas atas (0) atau batas bawah (512)
             if (playerY <= 0 || playerY >= 512) {
                 this.hitPipe();
             }
@@ -136,17 +134,20 @@ export class Game extends Phaser.Scene {
 
         this.cursors = this.input.keyboard.createCursorKeys();
 
-        this.cursors.space.once('down', (key, event) => {
-            if (this.isStarted) return;
-            this.startGame();
-            this.isStarted = true;
+        this.cursors.space.on('down', () => {
+            this.tryStartGame();
         });
 
-        this.input.once('pointerdown', () => {
-            if (this.isStarted) return;
-            this.startGame();
-            this.isStarted = true;
+        this.input.on('pointerdown', () => {
+            this.tryStartGame();
         });
+    }
+
+    tryStartGame() {
+        if (this.isStarted) return;
+
+        this.startGame();
+        this.isStarted = true;
     }
 
     initPhysics() {
