@@ -42,6 +42,13 @@ export default function Projects() {
     itch_io: "/plane",
     created_at: "2026-03-28",
     image: "/game/plane/thumbnail.png"
+  },
+  {
+    title: "Rakit PC",
+    description: "Endless runner game built with Unity WebGL. Dodge obstacles and survive as long as possible!",
+    itch_io: "/rakit",
+    created_at: "2026-03-28",
+    image: "/game/rakit/thumbnail.png"
   }
 ];
   return (
