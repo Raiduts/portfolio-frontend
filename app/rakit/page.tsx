@@ -29,8 +29,8 @@ export default function RakitPC() {
             )}
             <iframe
               src="/game/rakit/index.html"
-              width="900"
-              height="600"
+              width="1280"
+              height="720"
               className="w-full bg-black"
               style={{ display: isLoading ? "none" : "block" }}
               onLoad={() => setIsLoading(false)}
