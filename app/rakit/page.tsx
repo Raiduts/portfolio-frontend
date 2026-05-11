@@ -19,9 +19,9 @@ export default function RakitPC() {
     <div className="mt-16 min-h-screen bg-linear-to-b from-black via-purple-950/20 to-black">
       <div className="max-w-5xl mx-auto">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-white mb-2">Flappy Bird</h1>
+          <h1 className="text-4xl font-bold text-white mb-2">Rakit PC</h1>
           <p className="text-gray-400 text-sm">
-            Classic arcade game • built with Phaser
+            Ayo merakit PC - Unity WebGL
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export default function RakitPC() {
 
           <div className="relative bg-zinc-900 rounded-lg overflow-hidden border border-purple-500/30">
             {isLoading && (
-              <div className="h-[720px] flex items-center justify-center bg-zinc-900/90">
+              <div className="h-180 flex items-center justify-center bg-zinc-900/90">
                 <div className="text-center">
                   <div className="w-10 h-10 border-2 border-purple-500/30 border-t-purple-400 rounded-full animate-spin mx-auto mb-3"></div>
                   <p className="text-zinc-500 text-sm">loading game...</p>
@@ -42,7 +42,7 @@ export default function RakitPC() {
               ref={iframeRef}
               src="/game/rakit/index.html"
               allowFullScreen
-              className="w-full h-[720px] bg-black"
+              className="w-full h-180 bg-black" 
               style={{ display: isLoading ? "none" : "block" }}
               onLoad={() => setIsLoading(false)}
             />
