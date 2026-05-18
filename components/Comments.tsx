@@ -51,11 +51,10 @@ export default function Comments() {
       "sender"
     ) as HTMLInputElement;
 
-    if (isSubmitting) return; // Prevent double submit
+    if (isSubmitting) return;
 
     setIsSubmitting(true);
 
-    // Validasi
     if (!senderElement.value.trim()) {
       showToast("Name is required", "error");
       setIsSubmitting(false);
@@ -74,14 +73,12 @@ export default function Comments() {
       return;
     }
 
-    // Tambah komentar
     const error = await AddComment(senderElement.value, messageElement.value);
 
     if (!error) {
       showToast("Comment added successfully! 🎉", "success");
       await fetchComments();
 
-      // Clear input
       messageElement.value = "";
       senderElement.value = "";
     } else {
@@ -93,7 +90,6 @@ export default function Comments() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 relative">
-      {/* Custom Toast Notification */}
       {toast.show && (
         <div
           className={`fixed top-5 left-1/2 -translate-x-1/2 z-50 px-6 py-4 rounded-2xl shadow-2xl border backdrop-blur-xl animate-slide-down
@@ -111,7 +107,6 @@ export default function Comments() {
         </div>
       )}
 
-      {/* Rest of your component... */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent inline-block">
           Comments
@@ -119,7 +114,6 @@ export default function Comments() {
         <div className="w-24 h-1 bg-linear-to-r from-blue-400 to-purple-500 mx-auto mt-4 rounded-full" />
       </div>
 
-      {/* Comments List */}
       <div className="space-y-4 mb-12">
         {allComments.length === 0 ? (
           <div className="text-center py-12 bg-gray-800/30 rounded-2xl border border-gray-700/50">
@@ -145,7 +139,6 @@ export default function Comments() {
         )}
       </div>
 
-      {/* Add Comment Form */}
       <div className="relative">
         <div className="absolute inset-0 bg-linear-to-r from-blue-500/10 to-purple-500/10 rounded-3xl blur-3xl -z-10" />
 
@@ -155,7 +148,6 @@ export default function Comments() {
           </h3>
 
           <div className="space-y-4">
-            {/* Name Input dengan auto-fill dari localStorage */}
             <div className="group">
               <div className="relative">
                 <input
@@ -182,7 +174,6 @@ export default function Comments() {
               </div>
             </div>
 
-            {/* Message Input */}
             <div className="group">
               <div className="relative">
                 <textarea
@@ -200,13 +191,11 @@ export default function Comments() {
                   Your Message
                 </label>
               </div>
-              {/* Character counter */}
               <div className="text-right mt-1 text-xs text-gray-500">
                 <span id="message-counter">0/500</span>
               </div>
             </div>
 
-            {/* Submit Button */}
             <div className="text-center pt-4">
               <button
                 className={`group relative px-8 py-4 bg-linear-to-r from-purple-500 to-purple-600 rounded-2xl text-white font-semibold text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/25 hover:scale-105 active:scale-95 overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100`}

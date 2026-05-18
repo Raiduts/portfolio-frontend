@@ -9,7 +9,6 @@ export default function Navbar() {
         </a>
 
         <div className="flex gap-6 text-sm text-gray-300">
-          {/* <button onClick={() => alert("Hello")}>Say Hi</button> */}
           <a href="/.#projects" className="hover:text-white">Projects</a>
           <a href="/.#skills" className="hover:text-white">Skills</a>
           <a href="/.#about" className="hover:text-white">About</a>
