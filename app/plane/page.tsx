@@ -43,7 +43,7 @@ export default function Plane() {
             <span className="text-purple-400 text-sm font-medium block mb-1">
               🎮 CONTROL
             </span>
-            <span className="text-white text-sm">Gunakan Arrow Keys</span>
+            <span className="text-white text-sm">Gunakan Arrow Keys / Analog Stick</span>
           </div>
           <div className="bg-zinc-900/80 backdrop-blur-sm rounded-lg px-4 py-3 border border-purple-500/30">
             <span className="text-purple-400 text-sm font-medium block mb-1">

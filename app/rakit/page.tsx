@@ -21,7 +21,11 @@ export default function RakitPC() {
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-white mb-2">Rakit PC</h1>
           <p className="text-gray-400 text-sm">
-            Ayo merakit PC - Unity WebGL
+            Ayo merakit PC - Unity WebGL 
+            <br></br>
+            =======================
+            <br></br>
+            Sebuah game edukasi yang mengajak pemain untuk merakit komputer sesuai petunjuk. Dengan grafis menarik dan gameplay interaktif, pemain dapat belajar tentang komponen PC sambil bersenang-senang. Cocok untuk siswa yang ingin memahami dasar-dasar perakitan komputer dengan cara yang menyenangkan.
           </p>
         </div>
 
@@ -46,6 +50,21 @@ export default function RakitPC() {
               style={{ display: isLoading ? "none" : "block" }}
               onLoad={() => setIsLoading(false)}
             />
+          </div>
+        </div>
+
+        <div className="mt-6 grid grid-cols-2 gap-3">
+          <div className="bg-zinc-900/80 backdrop-blur-sm rounded-lg px-4 py-3 border border-purple-500/30">
+            <span className="text-purple-400 text-sm font-medium block mb-1">
+              🎮 CONTROL
+            </span>
+            <span className="text-white text-sm">Gunakan Mouse Pada Komputer / Tekan Layar Pada Handphone</span>
+          </div>
+          <div className="bg-zinc-900/80 backdrop-blur-sm rounded-lg px-4 py-3 border border-purple-500/30">
+            <span className="text-purple-400 text-sm font-medium block mb-1">
+              🏆 OBJECTIVE
+            </span>
+            <span className="text-white text-sm">Rakit PC Sesuai Petunjuk dan Dapatkan Skor Terbaik</span>
           </div>
         </div>
 

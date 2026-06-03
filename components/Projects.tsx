@@ -30,22 +30,22 @@ export default function Projects() {
 
   const featuredProjects = [
   {
-    title: "Flappy Bird",
+    title: "Flappy Bird - Phaser",
     description: "Classic arcade game built with Phaser. Navigate the bird through pipes and aim for a high score!",
     itch_io: "/flappy",
     created_at: "2024-06-01",
     image: "/game/flappy/thumbnail.png"
   },
   {
-    title: "Plane Runner",
+    title: "Plane Runner - Unity WebGL",
     description: "Endless runner game built with Unity WebGL. Dodge obstacles and survive as long as possible!",
     itch_io: "/plane",
     created_at: "2026-03-28",
     image: "/game/plane/thumbnail.png"
   },
   {
-    title: "Rakit PC",
-    description: "Endless runner game built with Unity WebGL. Dodge obstacles and survive as long as possible!",
+    title: "Rakit PC - Unity WebGL",
+    description: "Sebuah game edukasi yang mengajak pemain untuk merakit komputer sesuai petunjuk. Dengan grafis menarik dan gameplay interaktif, pemain dapat belajar tentang komponen PC sambil bersenang-senang.",
     itch_io: "/rakit",
     created_at: "2026-03-28",
     image: "/game/rakit/thumbnail.png"
