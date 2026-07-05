@@ -49,6 +49,13 @@ export default function Projects() {
     itch_io: "/rakit",
     created_at: "2026-03-28",
     image: "/game/rakit/thumbnail.png"
+  },
+  {
+    title: "Structure - Unity WebGL",
+    description: "Sebuah game edukasi yang mengajak pemain untuk merakit komputer sesuai petunjuk. Dengan grafis menarik dan gameplay interaktif, pemain dapat belajar tentang komponen PC sambil bersenang-senang.",
+    itch_io: "/structure",
+    created_at: "2026-03-28",
+    image: "/game/structures/thumbnail.png"
   }
 ];
   return (

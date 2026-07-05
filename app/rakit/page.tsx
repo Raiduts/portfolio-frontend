@@ -44,7 +44,7 @@ export default function RakitPC() {
 
             <iframe
               ref={iframeRef}
-              src="/game/rakit/index.html"
+              src="/game/letter/index.html"
               allowFullScreen
               className="w-full h-180 bg-black" 
               style={{ display: isLoading ? "none" : "block" }}

@@ -28,7 +28,7 @@ export default function FlappyBird() {
               </div>
             )}
             <iframe
-              src="/game/flappy/index.html"
+              src="/game/letter/index.html"
               width="900"
               height="600"
               className="w-full bg-black"
