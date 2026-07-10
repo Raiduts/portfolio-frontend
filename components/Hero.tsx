@@ -18,7 +18,7 @@ export default function Hero() {
         </p>
 
         <div className="mt-8 flex gap-4">
-          <button onClick={() => window.location.href = "#projects"} className="px-6 py-3 rounded-lg bg-gradient-to-r from-[#293681] to-[#778873] hover:from-[#1f2b6a] hover:to-[#5f7a6d] hover:shadow-lg hover:scale-105 transition text-[#FDF6ED]">
+          <button onClick={() => window.location.href = "#projects"} className="px-6 py-3 rounded-lg bg-[#778873] hover:to-[#5f7a6d] hover:shadow-lg hover:scale-105 transition text-[#FDF6ED]">
             View Projects
           </button>
 
