@@ -28,7 +28,7 @@ export default function FlappyBird() {
               </div>
             )}
             <iframe
-              src="/game/letter/index.html"
+              src="/game/flappy/index.html"
               width="900"
               height="600"
               className="w-full bg-[#FDF6ED]"
@@ -40,16 +40,16 @@ export default function FlappyBird() {
 
         <div className="mt-6 grid grid-cols-2 gap-3">
           <div className="bg-[#778873]/8 backdrop-blur-sm rounded-lg px-4 py-3 border border-[#A1BC98]/30">
-            <span className="text-[#A1BC98] text-sm font-medium block mb-1">
+            <span className="text-[#4274D9] text-sm font-medium block mb-1">
               🎮 CONTROL
             </span>
-            <span className="text-[#FDF6ED] text-sm">Tekan Spasi / Klik</span>
+            <span className="text-[#4274D9] text-sm">Tekan Spasi / Klik</span>
           </div>
           <div className="bg-[#778873]/8 backdrop-blur-sm rounded-lg px-4 py-3 border border-[#A1BC98]/30">
-            <span className="text-[#A1BC98] text-sm font-medium block mb-1">
+            <span className="text-[#4274D9] text-sm font-medium block mb-1">
               🏆 OBJECTIVE
             </span>
-            <span className="text-[#FDF6ED] text-sm">Lewati pipa, raih skor</span>
+            <span className="text-[#4274D9] text-sm">Lewati pipa, raih skor</span>
           </div>
         </div>
 
@@ -60,7 +60,7 @@ export default function FlappyBird() {
               const iframe = document.querySelector("iframe");
               if (iframe) iframe.src = "/game/flappy/index.html";
             }}
-            className="px-6 py-2.5 bg-[#778873]/8 hover:bg-[#778873]/10 text-[#FDF6ED] text-sm rounded-lg border border-[#A1BC98]/30 transition-all duration-200 flex items-center gap-2 backdrop-blur-sm"
+            className="px-6 py-2.5 bg-[#778873]/8 hover:bg-[#778873]/10 text-[#4274D9] text-sm rounded-lg border border-[#A1BC98]/30 transition-all duration-200 flex items-center gap-2 backdrop-blur-sm"
           >
             <span>↻</span> Restart Game
           </button>
