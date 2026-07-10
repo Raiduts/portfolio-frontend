@@ -19,13 +19,13 @@ export default function RakitPC() {
     <div className="mt-16 min-h-screen bg-linear-to-b from-black via-purple-950/20 to-black">
       <div className="max-w-5xl mx-auto">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-white mb-2">Rakit PC</h1>
+          <h1 className="text-4xl font-bold text-white mb-2">Structures</h1>
           <p className="text-gray-400 text-sm">
-            Ayo merakit PC - Unity WebGL 
+            Structures - Unity WebGL 
             <br></br>
             =======================
             <br></br>
-            Sebuah game edukasi yang mengajak pemain untuk merakit komputer sesuai petunjuk. Dengan grafis menarik dan gameplay interaktif, pemain dapat belajar tentang komponen PC sambil bersenang-senang. Cocok untuk siswa yang ingin memahami dasar-dasar perakitan komputer dengan cara yang menyenangkan.
+            Sebuah game edukasi yang mengajak pemain untuk belajar struktur data linear secara menyenangkan. Dengan grafis menarik dan gameplay interaktif, pemain dapat belajar sambil bersenang-senang. Cocok untuk siswa yang ingin memahami struktur data linear dengan cara yang menyenangkan.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export default function RakitPC() {
             <span className="text-purple-400 text-sm font-medium block mb-1">
               🏆 OBJECTIVE
             </span>
-            <span className="text-white text-sm">Rakit PC Sesuai Petunjuk dan Dapatkan Skor Terbaik</span>
+            <span className="text-white text-sm">Jelajahi Setiap Petualangan Struktur Data dan Raih Skor Setinggi-tingginya</span>
           </div>
         </div>
 
