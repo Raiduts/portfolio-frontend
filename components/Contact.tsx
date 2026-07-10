@@ -8,7 +8,7 @@ export default function Contact() {
           Let`s Work Together
         </h2>
 
-        <p className="text-gray-400 mb-10">
+        <p className="text-[#778873]/70 mb-10">
           I`m open to remote opportunities in software development,
           including web, apps, and game development.
         </p>
@@ -17,21 +17,21 @@ export default function Contact() {
 
           <a 
             href="https://github.com/raiduts"
-            className="px-6 py-3 bg-gray-900 border border-gray-700 rounded-lg transition transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/20"
+            className="px-6 py-3 bg-[#DCCFC0]/90 border border-[#A1BC98]/40 rounded-lg transition transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#A1BC98]/20 text-[#778873]"
           >
             GitHub
           </a>
 
           <a
             href="https://www.linkedin.com/in/rivaldo-sidiq-pradana-398467257/"
-            className="px-6 py-3 bg-gray-900 border border-gray-700 rounded-lg transition transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/20"
+            className="px-6 py-3 bg-[#DCCFC0]/90 border border-[#A1BC98]/40 rounded-lg transition transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#A1BC98]/20 text-[#778873]"
           >
             LinkedIn
           </a>
 
           <a
             href="mailto:rivaldosidiq1253@gmail.com"
-            className="px-6 py-3 bg-blue-600 rounded-lg transition transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/20"
+            className="px-6 py-3 bg-[#A1BC98] rounded-lg transition transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#A1BC98]/20 text-[#FDF6ED]"
           >
             Email Me
           </a>

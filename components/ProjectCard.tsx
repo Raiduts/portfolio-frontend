@@ -11,7 +11,7 @@ type Props = {
 
 export default function ProjectCard({ title, description, created_at, image, itch_io }: Props) {
   return (
-    <div className="group overflow-hidden rounded-xl border border-gray-800 hover:border-blue-500 transition duration-300 bg-black/40 flex flex-col h-full hover:-translate-y-1">
+    <div className="group overflow-hidden rounded-xl border border-[#A1BC98]/30 hover:border-[#778873] transition duration-300 bg-[#DCCFC0]/40 flex flex-col h-full hover:-translate-y-1">
 
       <div className="relative h-48 overflow-hidden">
 
@@ -32,12 +32,12 @@ export default function ProjectCard({ title, description, created_at, image, itc
           {title}
         </h3>
 
-        <p className="mt-2 text-gray-400 text-sm">
+        <p className="mt-2 text-[#778873]/70 text-sm">
           {description}
         </p>
 
         <div className="mt-auto">
-          <p className="mt-4 text-sm text-blue-400">
+          <p className="mt-4 text-sm text-[#A1BC98]">
             {new Date(created_at).toLocaleDateString("en-US", {
               year: "numeric",
               month: "short",
@@ -48,7 +48,7 @@ export default function ProjectCard({ title, description, created_at, image, itc
           <div className="mt-4 flex gap-3">
             <button 
             onClick={() => window.location.href = itch_io} 
-             className="text-sm px-4 py-2 bg-blue-600 rounded-md hover:bg-blue-700 transition">
+             className="text-sm px-4 py-2 bg-[#A1BC98] rounded-md hover:bg-[#778873] transition text-[#FDF6ED]">
               Play
             </button>
 

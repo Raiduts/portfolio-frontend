@@ -59,7 +59,7 @@ export default function Projects() {
   }
 ];
   return (
-    <section id="projects" className="py-24 px-6 bg-linear-to-b from-transparent via-purple-950/20 to-transparent">
+    <section id="projects" className="py-24 px-6 bg-linear-to-b from-transparent via-[#778873]/15 to-transparent">
       <h2 className="text-3xl font-bold text-center mb-12">
         Featured Projects
       </h2>
@@ -67,7 +67,7 @@ export default function Projects() {
       {
       loading ? (
         <div className="flex justify-center items-center h-64">
-          <div className="w-10 h-10 border-2 border-purple-500/30 border-t-purple-400 rounded-full animate-spin"></div>
+          <div className="w-10 h-10 border-2 border-[#A1BC98]/30 border-t-[#A1BC98] rounded-full animate-spin"></div>
         </div>
       ) : (
         <div className="grid md:grid-cols-3 gap-10 mx-auto">

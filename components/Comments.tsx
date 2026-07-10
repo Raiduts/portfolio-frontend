@@ -95,7 +95,7 @@ export default function Comments() {
           className={`fixed top-5 left-1/2 -translate-x-1/2 z-50 px-6 py-4 rounded-2xl shadow-2xl border backdrop-blur-xl animate-slide-down
           ${toast.type === "success" ? "bg-green-500/20 border-green-500/50 text-green-400" : ""}
           ${toast.type === "error" ? "bg-red-500/20 border-red-500/50 text-red-400" : ""}
-          ${toast.type === "info" ? "bg-blue-500/20 border-blue-500/50 text-blue-400" : ""}
+          ${toast.type === "info" ? "bg-[#778873]/10 border-[#778873]/30 text-[#778873]" : ""}
         `}
         >
           <div className="flex items-center gap-3">
@@ -108,20 +108,20 @@ export default function Comments() {
       )}
 
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent inline-block">
+        <h2 className="text-4xl font-bold bg-linear-to-r from-[#778873] to-[#A1BC98] bg-clip-text text-transparent inline-block">
           Comments
         </h2>
-        <div className="w-24 h-1 bg-linear-to-r from-blue-400 to-purple-500 mx-auto mt-4 rounded-full" />
+        <div className="w-24 h-1 bg-linear-to-r from-[#778873] to-[#A1BC98] mx-auto mt-4 rounded-full" />
       </div>
 
       <div className="space-y-4 mb-12">
         {allComments.length === 0 ? (
-          <div className="text-center py-12 bg-gray-800/30 rounded-2xl border border-gray-700/50">
-            <p className="text-gray-400">
+          <div className="text-center py-12 bg-[#778873]/8 rounded-2xl border border-[#A1BC98]/30">
+            <p className="text-[#778873]/70">
               No comments yet. Be the first to share! 💬
             </p>
           </div>
-        ) : (
+        ) : ( 
           allComments.map((item, index) => (
             <div
               key={item.id}
@@ -131,7 +131,7 @@ export default function Comments() {
                 opacity: 0,
               }}
             >
-              <div className="bg-linear-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg rounded-2xl border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-purple-500/10">
+              <div className="bg-linear-to-br from-[#FDF6ED]/50 to-[#DCCFC0]/40 backdrop-blur-lg rounded-2xl border border-[#A1BC98]/30 hover:border-[#778873] transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#A1BC98]/10">
                 {ShowComment(item)}
               </div>
             </div>
@@ -140,10 +140,10 @@ export default function Comments() {
       </div>
 
       <div className="relative">
-        <div className="absolute inset-0 bg-linear-to-r from-blue-500/10 to-purple-500/10 rounded-3xl blur-3xl -z-10" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#778873]/6 to-[#A1BC98]/6 rounded-3xl blur-3xl -z-10" />
 
-        <div className="bg-linear-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-lg rounded-3xl border border-gray-700/50 p-8 shadow-2xl">
-          <h3 className="text-2xl font-semibold text-center mb-6 bg-linear-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+        <div className="bg-linear-to-br from-[#FDF6ED]/30 to-[#DCCFC0]/30 backdrop-blur-lg rounded-3xl border border-[#A1BC98]/30 p-8 shadow-2xl">
+          <h3 className="text-2xl font-semibold text-center mb-6 bg-linear-to-r from-[#778873] to-[#A1BC98] bg-clip-text text-transparent">
             Share Your Thoughts
           </h3>
 
@@ -163,11 +163,11 @@ export default function Comments() {
                   onChange={(e) =>
                     localStorage.setItem("commentName", e.target.value)
                   }
-                  className="w-full px-6 py-4 bg-gray-800/50 border-2 border-gray-700 rounded-2xl text-white placeholder-transparent focus:outline-none focus:border-purple-500 transition-all duration-300 peer"
+                  className="w-full px-6 py-4 bg-[#778873]/6 border-2 border-[#A1BC98]/30 rounded-2xl text-[#778873] placeholder-transparent focus:outline-none focus:border-[#A1BC98] transition-all duration-300 peer"
                 />
                 <label
                   htmlFor="sender"
-                  className="absolute left-6 -top-3 bg-gray-900 px-2 text-sm text-gray-400 transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-4 peer-placeholder-shown:left-6 peer-placeholder-shown:bg-transparent peer-focus:-top-3 peer-focus:left-6 peer-focus:text-sm peer-focus:text-purple-400 peer-focus:bg-gray-900"
+                  className="absolute left-6 -top-3 bg-[#FDF6ED] px-2 text-sm text-[#778873] transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-[#778873]/60 peer-placeholder-shown:top-4 peer-placeholder-shown:left-6 peer-placeholder-shown:bg-transparent peer-focus:-top-3 peer-focus:left-6 peer-focus:text-sm peer-focus:text-[#A1BC98] peer-focus:bg-[#FDF6ED]"
                 >
                   Your Name
                 </label>
@@ -182,27 +182,27 @@ export default function Comments() {
                   placeholder=" "
                   rows={4}
                   maxLength={500}
-                  className="w-full px-6 py-4 bg-gray-800/50 border-2 border-gray-700 rounded-2xl text-white placeholder-transparent focus:outline-none focus:border-purple-500 transition-all duration-300 resize-none peer"
+                  className="w-full px-6 py-4 bg-[#778873]/6 border-2 border-[#A1BC98]/30 rounded-2xl text-[#778873] placeholder-transparent focus:outline-none focus:border-[#A1BC98] transition-all duration-300 resize-none peer"
                 />
                 <label
                   htmlFor="message"
-                  className="absolute left-6 -top-3 bg-gray-900 px-2 text-sm text-gray-400 transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-4 peer-placeholder-shown:left-6 peer-placeholder-shown:bg-transparent peer-focus:-top-3 peer-focus:left-6 peer-focus:text-sm peer-focus:text-purple-400 peer-focus:bg-gray-900"
+                  className="absolute left-6 -top-3 bg-[#FDF6ED] px-2 text-sm text-[#778873] transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:text-[#778873]/60 peer-placeholder-shown:top-4 peer-placeholder-shown:left-6 peer-placeholder-shown:bg-transparent peer-focus:-top-3 peer-focus:left-6 peer-focus:text-sm peer-focus:text-[#A1BC98] peer-focus:bg-[#FDF6ED]"
                 >
                   Your Message
                 </label>
               </div>
-              <div className="text-right mt-1 text-xs text-gray-500">
+              <div className="text-right mt-1 text-xs text-[#778873]/60">
                 <span id="message-counter">0/500</span>
               </div>
             </div>
 
             <div className="text-center pt-4">
               <button
-                className={`group relative px-8 py-4 bg-linear-to-r from-purple-500 to-purple-600 rounded-2xl text-white font-semibold text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/25 hover:scale-105 active:scale-95 overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100`}
+                className={`group relative px-8 py-4 bg-linear-to-r from-[#778873] to-[#A1BC98] rounded-2xl text-[#FDF6ED] font-semibold text-lg transition-all duration-300 hover:shadow-2xl hover:shadow-[#A1BC98]/25 hover:scale-105 active:scale-95 overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100`}
                 onClick={handleSubmit}
                 disabled={isSubmitting}
               >
-                <div className="absolute inset-0 bg-linear-to-r from-purple-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-linear-to-r from-[#778873] to-[#A1BC98] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <span className="relative flex items-center justify-center gap-2">
                   {isSubmitting ? (
                     <>
@@ -232,7 +232,7 @@ export default function Comments() {
             </div>
           </div>
 
-          <p className="text-sm text-gray-500 text-right mt-4">
+          <p className="text-sm text-[#778873]/60 text-right mt-4">
             <span className="font-mono">
               Share your thoughts with the others ✨
             </span>
@@ -319,15 +319,15 @@ function ShowComment(data: Comment) {
   return (
     <div className="p-6 group cursor-default">
       <div className="flex items-center gap-3 mb-3">
-        <div className="w-10 h-10 rounded-full bg-linear-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white font-semibold text-lg shadow-lg">
+        <div className="w-10 h-10 rounded-full bg-linear-to-br from-[#778873] to-[#A1BC98] flex items-center justify-center text-[#FDF6ED] font-semibold text-lg shadow-lg">
           {data.name ? data.name.charAt(0).toUpperCase() : "A"}
         </div>
 
         <div className="flex-1">
-          <h3 className="text-lg font-semibold text-transparent bg-linear-to-r from-purple-400 to-purple-400 bg-clip-text">
+          <h3 className="text-lg font-semibold text-transparent bg-linear-to-r from-[#778873] to-[#A1BC98] bg-clip-text">
             {data.name || "Anonymous"}
           </h3>
-          <p className="text-xs text-gray-500">
+          <p className="text-xs text-[#778873]/60">
             {new Date(data.created_at).toLocaleString("id-ID", {
               day: "numeric",
               month: "long",
@@ -349,22 +349,22 @@ function ShowComment(data: Comment) {
 
       <div className="relative">
         <svg
-          className="absolute -top-2 -left-2 w-6 h-6 text-purple-500/20 group-hover:text-purple-500/30 transition-colors duration-300"
+          className="absolute -top-2 -left-2 w-6 h-6 text-[#778873]/20 group-hover:text-[#778873]/30 transition-colors duration-300"
           fill="currentColor"
           viewBox="0 0 24 24"
         >
           <path d="M10 11h-4v-4h4v4zm8 0h-4v-4h4v4z" />
         </svg>
 
-        <p className="text-gray-300 pl-6 pr-4 py-2 leading-relaxed border-l-2 border-gray-700 group-hover:border-purple-500 transition-colors duration-300">
+        <p className="text-[#778873]/80 pl-6 pr-4 py-2 leading-relaxed border-l-2 border-[#A1BC98]/30 group-hover:border-[#778873] transition-colors duration-300">
           {data.message}
-          <span className="text-purple-400 ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span className="text-[#A1BC98] ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             ✦
           </span>
         </p>
       </div>
 
-      <div className="mt-4 h-px bg-linear-to-r from-transparent via-gray-700 to-transparent group-hover:via-purple-500 transition-all duration-300" />
+      <div className="mt-4 h-px bg-linear-to-r from-transparent via-[#778873]/30 to-transparent group-hover:via-[#A1BC98] transition-all duration-300" />
     </div>
   );
 }

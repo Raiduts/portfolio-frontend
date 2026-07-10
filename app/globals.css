@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FDF6ED;
+  --foreground: #778873;
+  --palette-1: #778873;
+  --palette-2: #A1BC98;
+  --palette-3: #DCCFC0;
+  --palette-4: #FDF6ED;
 }
 
 @layer base {
@@ -18,10 +23,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #FDF6ED;
+    --foreground: #778873;
   }
 }
 
@@ -36,5 +41,5 @@ section {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Geist Pixel";
 }

@@ -9,9 +9,9 @@ export default function Skills() {
   const tools = ["Git", "VS Code", "Figma", "Canva", "Illustrator"]
 
   return (
-    <section id="skills" className="py-24 px-6 bg-linear-to-b from-transparent via-purple-950/20 to-transparent">
+    <section id="skills" className="py-24 px-6 bg-gradient-to-b from-[#DCCFC0] to-[#DCCFC0]">
 
-      <h2 className="text-3xl font-bold text-center mb-12">
+      <h2 className="text-3xl font-bold text-center mb-12 text-[#293681]">
         Skills
       </h2>
 
@@ -39,13 +39,13 @@ type SkillColumnProps = {
 
 function SkillColumn({ title, skills }: SkillColumnProps) {
   return (
-    <div className="p-6 rounded-xl border border-gray-800 hover:border-blue-500 transition transform hover:-translate-y-1 hover:scale-[1.02] bg-black/40 backdrop-blur">
+    <div className="p-6 rounded-xl border border-[#A1BC98]/30 hover:border-[#778873] transition transform hover:-translate-y-1 hover:scale-[1.02] bg-[#A1BC98]">
 
-      <h3 className="text-xl font-semibold mb-4">
+      <h3 className="text-xl font-semibold mb-4 text-[#293681]">
         {title}
       </h3>
 
-      <ul className="space-y-1 text-gray-400 grid md:grid-cols-2 gap-2">
+      <ul className="space-y-1 text-[#293681]/70 grid md:grid-cols-2 gap-2">
         {skills.map((skill, index) => (
           <li key={index}>
                 {skill}
